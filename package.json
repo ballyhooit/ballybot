@@ -17,7 +17,7 @@
   "dependencies": {
     "hubot": "2.3.2",
     "hubot-socket.io": "https://github.com/ballyhooit/hubot-socket.io/tarball/master",
-    "hubot-scripts": ">= 2.1.0",
+    "hubot-scripts": "https://github.com/ballyhooit/hubot-scripts/tarball/master",
     "optparse": "1.0.3"
   },
 
