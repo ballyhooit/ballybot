@@ -15,11 +15,11 @@ Switches = [
 ]
 
 Options =
-  adapter: "shell"
+  adapter: "socket.io"
   alias: false
   create: false
   enableHttpd: true
-  name: "Hubot"
+  name: "Ballybot"
   path: "."
 
 Parser = new OptParse.OptionParser(Switches)

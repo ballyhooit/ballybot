@@ -30,7 +30,7 @@
   },
   "subdomain": "ballybot",
   "scripts" : {
-    "start": "coffee app.coffee -a socket.io -n Ballybot"
+    "start": "coffee app.coffee"
   }
 
 }
