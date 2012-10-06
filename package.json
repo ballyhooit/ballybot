@@ -27,6 +27,11 @@
   "engines": {
     "node": "0.6.x",
     "npm": "1.0.x"
+  },
+  "subdomain": "ballybot",
+  "scripts" : {
+    "start": "coffee app.coffee -a socket.io -n Ballybot"
   }
+
 }
 
