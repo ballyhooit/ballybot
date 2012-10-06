@@ -1,1 +1,1 @@
-web: bin/hubot -a socket.io -n Hubot
+web: bin/hubot -a socket.io -n Ballybot

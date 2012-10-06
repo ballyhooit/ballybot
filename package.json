@@ -20,6 +20,9 @@
     "hubot-scripts": "https://github.com/ballyhooit/hubot-scripts/tarball/master",
     "optparse": "1.0.3"
   },
+  "devDependencies" :{
+    "nodemon": "*"
+  },
 
   "engines": {
     "node": "0.6.x",
