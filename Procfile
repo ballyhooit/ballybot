@@ -1,1 +1,1 @@
-web: coffee app.coffee -a socket.io -n Ballybot
+web: coffee app.coffee

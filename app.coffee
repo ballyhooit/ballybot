@@ -56,7 +56,6 @@ unless process.platform is "win32"
 
 
 adapterPath = Path.resolve __dirname, "..", "src", "adapters"
-console.log adapterPath
 robot = Hubot.loadBot adapterPath, Options.adapter, Options.enableHttpd, Options.name
 
 if Options.version

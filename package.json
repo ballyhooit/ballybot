@@ -1,37 +1,70 @@
 {
-  "name":        "hosted-hubot",
-  "version":     "2.3.2",
-  "author":      "GitHub Inc.",
-  "keywords":    "github hubot campfire bot",
+  "name": "ballybot",
+  "version": "2.3.2-5",
+  "author": "GitHub Inc.",
+  "keywords": "github hubot campfire bot",
   "description": "A simple helpful Robot for your Company",
-  "licenses":     [{
-    "type":       "MIT",
-    "url":        "http://github.com/github/hubot/raw/master/LICENSE"
-  }],
-
-  "repository" : {
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/github/hubot/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
     "type": "git",
-    "url":  "https://github.com/github/hubot.git"
+    "url": "https://github.com/github/hubot.git"
   },
-
   "dependencies": {
     "hubot": "2.3.2",
     "hubot-socket.io": "https://github.com/ballyhooit/hubot-socket.io/tarball/master",
     "hubot-scripts": "https://github.com/ballyhooit/hubot-scripts/tarball/master",
     "optparse": "1.0.3"
   },
-  "devDependencies" :{
+  "devDependencies": {
     "nodemon": "*"
   },
-
   "engines": {
     "node": "0.6.x",
     "npm": "1.0.x"
   },
-  "subdomain": "ballybot",
-  "scripts" : {
+  "env": {
+    "REDISTOGO_URL": "redis://wiebersk:3d6178d53be371b34e3de85e1822f12b@koi.redistogo.com:9534/",
+    "BALLYCHAT_URL": "http://ballychat.jit.su",
+    "HUBOT_AWS_ACCESS_KEY_ID" : "",
+    "HUBOT_AWS_SECRET_ACCESS_KEY" : "",
+    "HUBOT_AWS_SQS_REGIONS" : "",
+    "HUBOT_AWS_EC2_REGIONS" : "",
+    "HUBOT_BASECAMP_KEY" : "",
+    "HUBOT_BASECAMP_URL" : "",
+    "HUBOT_BING_ACCOUNT_KEY" : "",
+    "DELICIOUS_USER": "",
+    "DELICIOUS_PASSWORD" : "",
+    "BREWERYDB_API_KEY" : "64611efac889f321d18eef80a2145b7f",
+    "DNSIMPLE_USERNAME" : "kyle@ballyhoo.it",
+    "DNSIMPLE_PASSWORD" : "jet5mars",
+    "HUBOT_AUTHENTIC_JOBS_API_KEY" : "e8007068f4a579bcb383781775a16ff6",
+    "HUBOT_GITHUB_TOKEN" : "",
+    "HUBOT_GITHUB_USER" : "ballyhooit",
+    "HUBOT_GITHUB_REPO" : "ballychat",
+    "HUBOT_TUMBLR_API_KEY" : "VdieGPswukmHRBPIM5jZY9NfigNw74EYGN6VX64WHHIv94JBcf",
+    "HUBOT_MEMEGEN_USERNAME" : "",
+    "HUBOT_MEMEGEN_PASSWORD" : "",
+    "HUBOT_PLAY_URL" : "",
+    "HUBOT_PLAY_TOKEN" : "",
+    "RESQUE_WEB_URL" : "",
+    "HUBOT_ROTTEN_TOMATOES_API_KEY" : "h55a3m522q8masyq5uy6tvet",
+    "HUBOT_BITLY_USERNAME" : "wiebersk",
+    "HUBOT_BITLY_API_KEY" : "R_3efba019efbcc42829327972f1b3d945",
+    "HUBOT_SONOS_HOST" : "",
+    "HUBOT_MSTRANSLATE_APIKEY" : "",
+    "HUBOT_UPTIMEROBOT_APIKEY" : "u956-afus321g565fghr519",
+    "HUBOT_WOLFRAM_APPID" : "X356PL-YTJLKHU6H6",
+    "WOTD_PROVIDER" : "wordnik",
+    "WORDNIK_API_KEY" : "5ce55bc5f79ba9d02f81e04256700290167803e67fcc58f37",
+    "HUBOT_HISTORY_LINES":"20"
+  },
+  "subdomain": "bally-bot",
+  "scripts": {
     "start": "coffee app.coffee"
   }
-
 }
-
