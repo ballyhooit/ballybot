@@ -1,8 +1,8 @@
 {
   "name": "ballybot",
-  "version": "2.3.2-18",
-  "author": "GitHub Inc.",
-  "keywords": "github hubot campfire bot",
+  "version": "2.3.5",
+  "author": "Balyhoo.it",
+  "keywords": "",
   "description": "A simple helpful Robot for your Company",
   "licenses": [
     {
@@ -19,9 +19,6 @@
     "hubot-socket.io": "https://github.com/ballyhooit/hubot-socket.io/tarball/master",
     "hubot-scripts": "https://github.com/ballyhooit/hubot-scripts/tarball/master",
     "optparse": "1.0.3"
-  },
-  "devDependencies": {
-    "nodemon": "*"
   },
   "engines": {
     "node": "0.6.x",
@@ -61,7 +58,9 @@
     "HUBOT_WOLFRAM_APPID": "X356PL-YTJLKHU6H6",
     "WOTD_PROVIDER": "wordnik",
     "WORDNIK_API_KEY": "5ce55bc5f79ba9d02f81e04256700290167803e67fcc58f37",
-    "HUBOT_HISTORY_LINES": "20"
+    "HUBOT_HISTORY_LINES": "20",
+    "BALLCHAT_REC_MESSAGE": "message:send",
+    "BALLYCHAT_SEND_MESSAGE": "me:message:send"
   },
   "subdomain": "bally-bot",
   "scripts": {

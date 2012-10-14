@@ -67,6 +67,7 @@ robot.enableSlash = Options.enableSlash
 robot.alias = Options.alias
 
 loadScripts = ->
+  console.log 'loadScript', scriptInit
   if scriptInit == 0
     scriptsPath = Path.resolve ".", "scripts"
     robot.load scriptsPath
@@ -85,6 +86,7 @@ loadScripts = ->
     
     scriptInit++
 
+console.log 'started'
 robot.adapter.on 'connected', loadScripts
 
 robot.run()
