@@ -67,23 +67,24 @@ robot.enableSlash = Options.enableSlash
 robot.alias = Options.alias
 
 loadScripts = ->
-  scriptInit++
-  scriptsPath = Path.resolve ".", "scripts"
-  robot.load scriptsPath
+  if scriptInit == 0
+    scriptsPath = Path.resolve ".", "scripts"
+    robot.load scriptsPath
 
-  scriptsPath = Path.resolve "src", "scripts"
-  robot.load scriptsPath
+    scriptsPath = Path.resolve "src", "scripts"
+    robot.load scriptsPath
 
-  scriptsFile = Path.resolve "hubot-scripts.json"
-  
-  Path.exists scriptsFile, (exists) =>
-    if exists
-      Fs.readFile scriptsFile, (err, data) ->
-        scripts = JSON.parse data
-        scriptsPath = Path.resolve "node_modules", "hubot-scripts", "src", "scripts"
-        robot.loadHubotScripts scriptsPath, scripts
+    scriptsFile = Path.resolve "hubot-scripts.json"
+    
+    Path.exists scriptsFile, (exists) =>
+      if exists
+        Fs.readFile scriptsFile, (err, data) ->
+          scripts = JSON.parse data
+          scriptsPath = Path.resolve "node_modules", "hubot-scripts", "src", "scripts"
+          robot.loadHubotScripts scriptsPath, scripts
+    
+    scriptInit++
 
-robot.adapter.on 'connected', loadScripts() if scriptInit = 0
+robot.adapter.on 'connected', loadScripts
 
 robot.run()
-
