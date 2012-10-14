@@ -3,6 +3,7 @@ Fs         = require 'fs'
 Path       = require 'path'
 HTTP       = require 'http'
 OptParse   = require 'optparse'
+scriptInit = 0
 
 Switches = [
   [ "-a", "--adapter ADAPTER", "The Adapter to use" ],
@@ -66,7 +67,7 @@ robot.enableSlash = Options.enableSlash
 robot.alias = Options.alias
 
 loadScripts = ->
-  console.log 'load scripts'
+  scriptInit++
   scriptsPath = Path.resolve ".", "scripts"
   robot.load scriptsPath
 
@@ -74,7 +75,7 @@ loadScripts = ->
   robot.load scriptsPath
 
   scriptsFile = Path.resolve "hubot-scripts.json"
-  console.log scriptsFile
+  
   Path.exists scriptsFile, (exists) =>
     if exists
       Fs.readFile scriptsFile, (err, data) ->
@@ -82,7 +83,7 @@ loadScripts = ->
         scriptsPath = Path.resolve "node_modules", "hubot-scripts", "src", "scripts"
         robot.loadHubotScripts scriptsPath, scripts
 
-robot.adapter.on 'connected', loadScripts
+robot.adapter.on 'connected', loadScripts() if scriptInit = 0
 
 robot.run()
 
