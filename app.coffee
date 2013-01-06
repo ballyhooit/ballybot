@@ -3,6 +3,7 @@ Fs         = require 'fs'
 Path       = require 'path'
 HTTP       = require 'http'
 OptParse   = require 'optparse'
+
 scriptInit = 0
 
 Switches = [
@@ -86,7 +87,6 @@ loadScripts = ->
     
     scriptInit++
 
-console.log 'started'
 robot.adapter.on 'connected', loadScripts
 
 robot.run()

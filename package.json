@@ -1,6 +1,6 @@
 {
   "name": "ballybot",
-  "version": "2.3.5",
+  "version": "2.3.5-3",
   "author": "Balyhoo.it",
   "keywords": "",
   "description": "A simple helpful Robot for your Company",
@@ -17,15 +17,14 @@
   "dependencies": {
     "hubot": "2.3.2",
     "hubot-socket.io": "https://github.com/ballyhooit/hubot-socket.io/tarball/master",
-    "hubot-scripts": "https://github.com/ballyhooit/hubot-scripts/tarball/master",
-    "optparse": "1.0.3"
+    "hubot-scripts": "https://github.com/ballyhooit/hubot-scripts/tarball/master"
   },
   "engines": {
     "node": "0.6.x",
     "npm": "1.0.x"
   },
   "env": {
-    "REDISTOGO_URL": "redis://wiebersk:3d6178d53be371b34e3de85e1822f12b@koi.redistogo.com:9534/",
+    "REDISTOGO_URL": "redis://:HgkK3QtKVW5VYzUv1niPrVkQ6quNOHSAgAYoKdOL3dJpZcSO234zHeXKO015yqvO@node-01b81d9994ac9d75e.openredis.com:10884",
     "BALLYCHAT_URL": "http://ballychat.jit.su",
     "HUBOT_AWS_ACCESS_KEY_ID": "",
     "HUBOT_AWS_SECRET_ACCESS_KEY": "",
@@ -59,8 +58,8 @@
     "WOTD_PROVIDER": "wordnik",
     "WORDNIK_API_KEY": "5ce55bc5f79ba9d02f81e04256700290167803e67fcc58f37",
     "HUBOT_HISTORY_LINES": "20",
-    "BALLCHAT_REC_MESSAGE": "message:send",
-    "BALLYCHAT_SEND_MESSAGE": "me:message:send"
+    "BALLCHAT_REC_MESSAGE": "message:get",
+    "BALLYCHAT_SEND_MESSAGE": "message:post"
   },
   "subdomain": "bally-bot",
   "scripts": {
