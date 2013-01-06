@@ -1,0 +1,6 @@
+{
+	"REDISTOGO_URL":"redis://:HgkK3QtKVW5VYzUv1niPrVkQ6quNOHSAgAYoKdOL3dJpZcSO234zHeXKO015yqvO@node-01b81d9994ac9d75e.openredis.com:10884",
+	"BALLYCHAT_URL":"http://ballychat.nodejitsu.com/",
+	"BALLYCHAT_REC_MESSAGE":"message:get",
+	"BALLYCHAT_SEND_MESSAGE":"message:post"
+}
